@@ -6,11 +6,6 @@
 #include "cimnodes_r.h"
 
 
-CIMGUI_API void ImNodesR_SetImGuiContext(ImGuiContext* ctx)
-{
-    return ImGui::SetCurrentContext(ctx);
-}
-
 
 static inline ImVec2 ConvertToCPP_ImVec2(const ImVec2_c& src)
 {
@@ -199,5 +194,4 @@ CIMGUI_API void ImNodes_Ez_PopStyleColor(int count)
 {
     return ImNodes::Ez::PopStyleColor(count);
 }
-
 
